@@ -23,6 +23,8 @@ render() {
         <div csvLine1='1,3,"apple"'>
         </div>
         {this.state.name}
+        <p/>
+        {this.props.csvLine1}
 
 
       </div>
