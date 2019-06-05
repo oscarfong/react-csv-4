@@ -10,6 +10,7 @@ class CSV1 extends Component {
     };
   }
 
+// method: editDistance
 editDistance(s1, s2) {
   // https://stackoverflow.com/questions/10473745/compare-strings-javascript-return-of-likely
 
