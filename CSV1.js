@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
+import CSVTextArea from './CSVTextArea';
 class CSV1 extends Component {
   constructor() {
     super();
@@ -59,6 +60,7 @@ render() {
         {this.props.csvLine1}
         <p/>
         {this.editDistance("aaa1", "aba") }
+        <CSVTextArea/>
 
 
       </div>
