@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
+import './TableCSV.css';
 
 class TableCSV extends Component {
   constructor() {
@@ -18,7 +19,7 @@ class TableCSV extends Component {
     const firstCommaPos = this.props.toParse.indexOf(",");
 
     
-    return <div>
+    return <div class="TableCells">
         TableCells <div/>
         <input type="text" 
           value={this.state.value}
