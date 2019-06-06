@@ -16,7 +16,11 @@ class TableCells extends Component {
 
   render() {
     return <div>
-        TableCells <input />
+        TableCells <div/>
+        <input type="text" 
+          value={this.state.value}
+          onChange={event => this.onChange(event)} />        
+
     </div>
 
   }
