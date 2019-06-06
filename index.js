@@ -18,16 +18,23 @@ class App extends Component {
     };
   }
 
+  basicOutput1() { 
+    return  ( <p>
+          <p/><Hello name={this.state.name} />
+          Start editing to see some magic happen :)
+          <p/>
+          Test to see if stackblitz reverts my code.
+        </p> );
+  
+  }
+
   // used Safe.script instead of Helmet (react-helmet)
   render() {
     return (
       <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-          <p/>
-          Test to see if stackblitz reverts my code.
-        </p>
+        
+
+        {this.basicOutput1()}
 
         <CSV1 csvLine1='1,3,"apple"'>
         </CSV1>
