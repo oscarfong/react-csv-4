@@ -19,7 +19,8 @@ class TableCells extends Component {
         TableCells <div/>
         <input type="text" 
           value={this.state.value}
-          onChange={event => this.onChange(event)} />        
+          onChange={event => this.onChange(event)} />       
+        msg1: {this.props.toParse} 
 
     </div>
 

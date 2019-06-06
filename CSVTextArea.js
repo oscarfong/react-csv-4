@@ -21,7 +21,7 @@ class CSVTextArea extends Component {
 
         <p/>
         {this.state.value}
-        <TableCells/>
+        <TableCells toParse='123'/>
     </div>
 
   }
