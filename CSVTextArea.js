@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-import TableCells from './TableCells';
+import TableCSV from './TableCSV';
 
 class CSVTextArea extends Component {
   constructor() {
@@ -21,7 +21,7 @@ class CSVTextArea extends Component {
 
         <p/>
         {this.state.value}
-        <TableCells toParse='123'/>
+        <TableCSV toParse='123,abc,567'/>
     </div>
 
   }

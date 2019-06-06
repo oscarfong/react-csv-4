@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 
 
-class TableCells extends Component {
+class TableCSV extends Component {
   constructor() {
     super();
     this.state = {
@@ -14,13 +14,19 @@ class TableCells extends Component {
       this.setState({ value: event.target.value })
     }
 
-  render() {
+  render() {  
+    const firstCommaPos = this.props.toParse.indexOf(",");
+
+    
     return <div>
         TableCells <div/>
         <input type="text" 
           value={this.state.value}
           onChange={event => this.onChange(event)} />       
-        msg1: {this.props.toParse} 
+        msg1: {this.props.toParse} <p/>
+        keyOfCell:{this.props.keyOfCell}
+<p/>
+        firstCommaPos:{firstCommaPos}
 
     </div>
 
@@ -28,4 +34,4 @@ class TableCells extends Component {
 }
 
 
-export default TableCells ;
+export default TableCSV;
