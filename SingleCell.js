@@ -8,12 +8,19 @@ class SingleCell extends Component {
       value: ''
     };
   }
-  render() {
+  renderSomething() {
     return <div>
         <input type="text" 
           value={this.state.value}
           onChange={event => this.onChange(event)} />  
     </div>
+  }
+
+  render(){
+    if (this.props.value !="" ) // how value is passed from TableCSV to SingleCell
+    {
+      return this.renderSomething()
+    }
   }
 }
 
