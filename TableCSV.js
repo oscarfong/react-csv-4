@@ -3,13 +3,10 @@ import { render } from 'react-dom';
 
 import './TableCSV.css';
 
+import SingleCell from './SingleCell';
+
 class TableCSV extends Component {
-  constructor() {
-    super();
-    this.state = {
-      value: ''
-    };
-  }
+
 
     onChange (event) {
       this.setState({ value: event.target.value })
@@ -21,11 +18,10 @@ class TableCSV extends Component {
     
     return <div class="TableCells">
         TableCells <div/>
-        <input type="text" 
-          value={this.state.value}
-          onChange={event => this.onChange(event)} />       
-        msg1: {this.props.toParse} <p/>
-        keyOfCell:{this.props.keyOfCell}
+        <SingleCell/>
+     
+        //msg1: {this.props.toParse} <p/>
+        //keyOfCell:{this.props.keyOfCell}
 <p/>
         firstCommaPos:{firstCommaPos}
 
