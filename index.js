@@ -19,12 +19,9 @@ class App extends Component {
   }
 
   basicOutput1() { 
-    return  ( <p>
-          <p/><Hello name={this.state.name} />
-          Start editing to see some magic happen :)
-          <p/>
-          Test to see if stackblitz reverts my code.
-        </p> );
+    return  (
+          <Hello name={this.state.name} />
+      );
   
   }
 
