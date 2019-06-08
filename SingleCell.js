@@ -8,13 +8,14 @@ class SingleCell extends Component {
       value: ' aa '
     };
   }
-  renderSomething(firstCSVArg) {
+  renderSomething(firstCSVArg, pArgs2ndToLast) {
     
     return <div>
 
         <input type="text" 
           value={firstCSVArg}
-          onChange={event => this.onChange(event)} /> 
+          onChange={event => this.onChange(event)} /> {pArgs2ndToLast+
+          ";"}
           
     </div>
   }
@@ -24,21 +25,32 @@ class SingleCell extends Component {
     </div>
   }
 
+
   render(){
 
     //ss:String = this.props.value ;
     //ss= String.prototype.trim.call( this.props.value);
     //var ss = this.props.value ;
     var ss =this.props.rowCSVData.trim() ;
-    this.state.stateValue =ss ;
+    //this.state.stateValue =ss ;
     //var tt = ss.trim();
 
     //ss.trim()
 
-    if ( this.props.value !="" ) // how value is passed from TableCSV to SingleCell
+    if ( ss !="" ) // how value is passed from TableCSV to SingleCell
     {
       const parseArr = this.props.rowCSVData.split(',');
-      return this.renderSomething( parseArr[0] )
+
+      //var thisArg = parseArr[0]
+      var thisArg = parseArr.shift();
+
+//      var args2ndToLast = (parseArr.pop()).join(',');
+      //var args2ndToLast = (parseArr.pop());
+      //var args2ndToLast = parseArr[1..];
+      //const joined2ndToLast = args2ndToLast.join(',');
+
+
+      return this.renderSomething( thisArg , parseArr)  
     } else {
       return this.renderTerminalCase()
     }
