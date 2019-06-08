@@ -46,14 +46,8 @@ editDistance(s1, s2) {
 render() {
     return (
       <div>
-        
-        <p>
-          Start editing to see some magic happen :)
-          <p/>
-          Test to see if stackblitz reverts my code.
-        </p>
 
-        <div csvLine1='1,3,"apple"'>
+        <div csvLine1='"csvLine",1,3,"apple"'>
         </div>
         {this.state.name}
         <p/>
