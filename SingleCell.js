@@ -5,14 +5,17 @@ class SingleCell extends Component {
   constructor() {
     super();
     this.state = {
-      value: ''
+      value: ' aa '
     };
   }
-  renderSomething() {
+  renderSomething(firstCSVArg) {
+    
     return <div>
+
         <input type="text" 
-          value={this.state.value}
-          onChange={event => this.onChange(event)} />  
+          value={firstCSVArg}
+          onChange={event => this.onChange(event)} /> 
+          
     </div>
   }
 
@@ -22,9 +25,20 @@ class SingleCell extends Component {
   }
 
   render(){
-    if (this.props.value !="" ) // how value is passed from TableCSV to SingleCell
+
+    //ss:String = this.props.value ;
+    //ss= String.prototype.trim.call( this.props.value);
+    //var ss = this.props.value ;
+    var ss =this.props.rowCSVData.trim() ;
+    this.state.stateValue =ss ;
+    //var tt = ss.trim();
+
+    //ss.trim()
+
+    if ( this.props.value !="" ) // how value is passed from TableCSV to SingleCell
     {
-      return this.renderSomething()
+      const parseArr = this.props.rowCSVData.split(',');
+      return this.renderSomething( parseArr[0] )
     } else {
       return this.renderTerminalCase()
     }

@@ -18,7 +18,7 @@ class TableCSV extends Component {
     
     return <div class="TableCells">
         TableCells <div/>
-        <SingleCell/>
+        <SingleCell rowCSVData={this.props.toParse}/>
      
         //msg1: {this.props.toParse} <p/>
         //keyOfCell:{this.props.keyOfCell}
