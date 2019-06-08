@@ -14,8 +14,8 @@ class SingleCell extends Component {
 
         <input type="text" 
           value={firstCSVArg}
-          onChange={event => this.onChange(event)} /> {pArgs2ndToLast+
-          ";"}
+          onChange={event => this.onChange(event)} /> 
+          <SingleCell rowCSVData={pArgs2ndToLast.join(',')} />
         
           
     </div>
