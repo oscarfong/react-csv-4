@@ -20,9 +20,7 @@ class TableCSV extends Component {
         TableCells <div/>
         <SingleCell rowCSVData={this.props.toParse}/>
      
-        //msg1: {this.props.toParse} <p/>
-        //keyOfCell:{this.props.keyOfCell}
-<p/>
+        <p/>
         firstCommaPos:{firstCommaPos}
 
     </div>

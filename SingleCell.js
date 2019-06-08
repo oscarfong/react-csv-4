@@ -32,7 +32,7 @@ class SingleCell extends Component {
     var ss =this.props.rowCSVData.trim() ;
 
 
-    if ( ss !="" ) // how value is passed from TableCSV to SingleCell
+    if ( ss !="" ) 
     {
       const parseArr = this.props.rowCSVData.split(',');
 
