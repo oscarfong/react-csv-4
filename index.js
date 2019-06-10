@@ -37,7 +37,9 @@ class App extends Component {
         <CSV1 csvLine1='1,3,"apple"'>
         </CSV1>
 
-        <div class="box">
+        <p/><p/>Use bootstrap
+
+        <div class="box bg-info ">
           <div>One</div>
           <div>Two</div>
           <div>Three
@@ -45,7 +47,10 @@ class App extends Component {
               extra
               text
           </div>
+          
         </div>
+
+
       
 
       </div>
