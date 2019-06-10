@@ -10,7 +10,7 @@ class SingleCell extends Component {
   }
   renderSomething(firstCSVArg, pArgs2ndToLast) {
     
-    return <span>
+    return <div>
 
         <input type="text" 
           value={firstCSVArg}
@@ -18,7 +18,7 @@ class SingleCell extends Component {
           <SingleCell rowCSVData={pArgs2ndToLast.join(',')} />
         
           
-    </span>
+    </div>
   }
 
   renderTerminalCase() {

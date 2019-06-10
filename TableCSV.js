@@ -16,14 +16,26 @@ class TableCSV extends Component {
     const firstCommaPos = this.props.toParse.indexOf(",");
 
     
-    return <div class="TableCells">
-        TableCells <div/>
-        <SingleCell rowCSVData={this.props.toParse}/>
+    return <div class="container">
+      <div class="row">
+        <div class="col">>> .. </div>
      
-        <p/>
-        firstCommaPos:{firstCommaPos}
+        <SingleCell rowCSVData={this.props.toParse}   />
+     
+        
+        
 
+      </div>
+
+
+
+
+
+
+
+      
     </div>
+    // firstCommaPos:{firstCommaPos}
 
   }
 }

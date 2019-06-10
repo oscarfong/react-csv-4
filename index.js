@@ -3,14 +3,20 @@
 
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+
 import Hello from './Hello';
 import CSV1 from './CSV1';
+import MyBootstrapTest from './MyBootstrapTest';
+
 import './style.css';
 
 import {Helmet} from "react-helmet";
 import Safe from "react-safe";
 
-import {Container, Row, Col} from "react-bootstrap";
+import Treeview from 'react-treeview-customizable';
+
+import { Table } from 'react-bootstrap';
+
 class App extends Component {
   constructor() {
     super();
@@ -29,7 +35,7 @@ class App extends Component {
   // used Safe.script instead of Helmet (react-helmet)
   render() {
     return (
-      <div>
+      <div className="App">
         
 
         {this.basicOutput1()}
@@ -49,6 +55,8 @@ class App extends Component {
           </div>
           
         </div>
+
+        <MyBootstrapTest />
 
 
       
