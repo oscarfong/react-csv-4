@@ -10,6 +10,7 @@ import './style.css';
 import {Helmet} from "react-helmet";
 import Safe from "react-safe";
 
+import {Container, Row, Col} from "react-bootstrap";
 class App extends Component {
   constructor() {
     super();
@@ -36,6 +37,16 @@ class App extends Component {
         <CSV1 csvLine1='1,3,"apple"'>
         </CSV1>
 
+        <div class="box">
+          <div>One</div>
+          <div>Two</div>
+          <div>Three
+              has
+              extra
+              text
+          </div>
+        </div>
+      
 
       </div>
       
