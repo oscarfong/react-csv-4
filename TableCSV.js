@@ -19,7 +19,7 @@ class TableCSV extends Component {
 
 
     
-    return <div><table striped bordered hover>
+    return <div><Table striped bordered hover>
     <thead />
     <tbody>
         <tr>
@@ -37,7 +37,7 @@ class TableCSV extends Component {
 
 
       
-    </table>
+    </Table>
     </div>
 
 
