@@ -24,10 +24,14 @@ class TableCSV extends Component {
     <tbody>
         <tr>
           <td class="col">>> .. </td>
-      
           <SingleCell rowCSVData={this.props.toParse}   />
-  
         </tr>
+
+        <tr>
+          <td class="col">>> .. </td>
+          <SingleCell rowCSVData={this.props.toParse}   />
+        </tr>
+
       </tbody>
 
 
