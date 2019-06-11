@@ -1,16 +1,28 @@
 
-
-
 import React, { Component } from 'react';
 
 import { Table } from 'react-bootstrap';
 
-class MyBootstrapTest extends Component {
+import MyBootstLvl2 from './MyBootstLvl2';
 
+class MyBootstrapTest extends Component {
+  constructor() {
+    super();
+
+    this.getData = this.getData.bind(this);
+  };
+
+  getData(val){
+    // do not forget to bind getData in constructor
+    console.log(val);  //successful
+  }
+  
   render() {
     return (
       <div>
         <a href = "https://react-bootstrap.github.io/components/table/">doc for Table</a>
+        <MyBootstLvl2 sendData={this.getData}/>
+        {this.getData}
         <Table striped bordered hover>
           <thead>
             <tr>
@@ -40,6 +52,7 @@ class MyBootstrapTest extends Component {
             </tr>
           </tbody>
         </Table>
+        
       </div>
     );
   }
