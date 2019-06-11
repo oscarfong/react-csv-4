@@ -9,7 +9,9 @@ class MyBootstrapTest extends Component {
   constructor() {
     super();
 
-    this.getData = this.getData.bind(this);
+    this.getData = this.getData.bind(this);  // https://stackoverflow.com/questions/38394015/how-to-pass-data-from-child-component-to-its-parent-in-reactjs
+
+    
   };
 
   getData(val){

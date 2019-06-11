@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
+import { Table } from 'react-bootstrap';
 class SingleCell extends Component {
   constructor() {
     super();
@@ -8,23 +9,30 @@ class SingleCell extends Component {
       value: ' aa '
     };
   }
+
+
   renderSomething(firstCSVArg, pArgs2ndToLast) {
+
+    // JSX can be concatenate as elements of an array. [ , , ]
     
-    return <div>
+    return [
+      <td>
 
         <input type="text" 
           value={firstCSVArg}
           onChange={event => this.onChange(event)} /> 
-          <SingleCell rowCSVData={pArgs2ndToLast.join(',')} />
         
           
-    </div>
+      </td>,
+      <SingleCell rowCSVData={pArgs2ndToLast.join(',')} />
+    ]
   }
 
   renderTerminalCase() {
-    return <div>
-    </div>
+    return <td>
+    </td>
   }
+
 
 
   render(){

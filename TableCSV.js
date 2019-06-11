@@ -5,6 +5,8 @@ import './TableCSV.css';
 
 import SingleCell from './SingleCell';
 
+import { Table } from 'react-bootstrap';
+
 class TableCSV extends Component {
 
 
@@ -15,17 +17,18 @@ class TableCSV extends Component {
   render() {  
     const firstCommaPos = this.props.toParse.indexOf(",");
 
-    
-    return <div class="container">
-      <div class="row">
-        <div class="col">>> .. </div>
-     
-        <SingleCell rowCSVData={this.props.toParse}   />
-     
-        
-        
 
-      </div>
+    
+    return <div><table striped bordered hover>
+    <thead />
+    <tbody>
+        <tr>
+          <td class="col">>> .. </td>
+      
+          <SingleCell rowCSVData={this.props.toParse}   />
+  
+        </tr>
+      </tbody>
 
 
 
@@ -34,7 +37,12 @@ class TableCSV extends Component {
 
 
       
+    </table>
     </div>
+
+
+
+
     // firstCommaPos:{firstCommaPos}
 
   }
