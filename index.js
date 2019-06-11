@@ -17,6 +17,11 @@ import Treeview from 'react-treeview-customizable';
 
 import { Table } from 'react-bootstrap';
 
+
+import LevenshteinDistance from './Levenshtein';
+
+
+
 class App extends Component {
   constructor() {
     super();
@@ -57,6 +62,7 @@ class App extends Component {
         </div>
 
         <MyBootstrapTest />
+        LevenshteinDistance = <LevenshteinDistance a="aaa" b="aba" />
 
 
       
