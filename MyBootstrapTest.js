@@ -22,7 +22,7 @@ class MyBootstrapTest extends Component {
   render() {
     return (
       <div>
-        <a href = "https://react-bootstrap.github.io/components/table/">doc for Table</a>
+        <a href = "https://react-bootstrap.github.io/components/table/"><i>... doc for Table</i></a>
         <MyBootstLvl2 sendData={this.getData}/>
         {this.getData}
         <Table striped bordered hover>
